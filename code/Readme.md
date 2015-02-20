@@ -1,3 +1,2 @@
-Code Directory.
-All work here is mine, except otherwise noted 
+Code Directory. All work here is mine, except otherwise noted 
 
