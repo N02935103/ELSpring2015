@@ -26,10 +26,8 @@ try:
         cur = con.cursor()
         cur.execute('CREATE TABLE tempdata(time text, tempC DOUBLE, tempF DOUBLE)')
         mytempdata = readTemp()
-        thetime=str(mytempdata[0])
-        thecls=mytempdata[1]
-        thefrnh=mytempdata[2]
-        cur.execute('''INSERT INTO tempdata(time,tempC,tempF)VALUES(?,?,?)''', (thetime,thecls,thefrnh))
+        
+        cur.execute(''INSERT INTO tempdata(time,tempC,tempF)VALUES(?,?,?)'')
         print 'Current Temperature is: '+ str(thefrnh)+ 'F'
         print "temperature logged\n"
 
