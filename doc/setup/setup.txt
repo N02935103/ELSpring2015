@@ -1,0 +1,2 @@
+set is is done by following instruction provided in class and using raspberry pi tutorials.
+My primary source connecting to the internet is using ethernet cable
