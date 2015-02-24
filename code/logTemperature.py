@@ -25,11 +25,11 @@ try:
         con= mydb.connect ('temperature.db')
         cur = con.cursor()
         cur.execute('CREATE TABLE tempdata(time text, tempC DOUBLE, tempF DOUBLE)')
-        mytempdata = readTemp()
+        tempdata = readTemp()
         
         cur.execute(''INSERT INTO tempdata(time,tempC,tempF)VALUES(?,?,?)'')
         print 'Current Temperature is: '+ str(thefrnh)+ 'F'
-        print "temperature logged\n"
+        print "temperature logged"
 
 finally:
 
